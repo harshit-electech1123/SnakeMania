@@ -1,0 +1,63 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+
+    background: rgba(0, 0, 0, 0.7)url('img/snake.jpeg');
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    /* background-size: cover; */
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+}
+
+#board{
+    background: linear-gradient(rgb(32, 32, 32,0.95), rgb(66, 66, 66,0.95));
+    width: 80vmin;
+    height: 82vmin;
+    border: 5px solid rgba(255, 217, 0, 0.719);
+    border-radius: 12px;
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    grid-template-rows: repeat(18,1fr);
+}
+#scoreBox{
+    position: absolute;
+    top: 109px;
+    right: 120px;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    font-family: 'New Tegomin', serif;
+}
+#hiscoreBox{
+    position: absolute;
+    top: 159px;
+    right: 120px;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    font-family: 'New Tegomin', serif;
+}
+.head{
+
+    background: rgba(71, 17, 17, 0.692);
+    border-radius: 6px;
+    border: 2px solid white
+}
+.snake{
+    /* background-color: white; */
+    background: rgb(199, 141, 17);
+    border-radius: 12px;
+}
+.food{
+    /* background-color:rgb(218, 60, 32); */
+    background: url(img/food.jpeg);
+    border-radius: 40px;
+    background-size: cover;
+}
